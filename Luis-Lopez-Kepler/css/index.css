@@ -1,0 +1,44 @@
+
+body {
+    background-color: #dbdbdb;      
+    color: #333333;                  
+    font-family: 'Arial', sans-serif; 
+    padding: 20px;                   
+  }
+  
+  
+  header {
+    text-align: center;              
+    font-size: 2em;                 
+    font-weight: bold;
+    color: #222222;
+  }
+  
+  
+  section {
+    padding: 15px;                  
+    margin: 20px 0;                  
+    border: 2px solid #000000;       
+  }
+  
+  .experience li {
+    list-style: none;               
+    background-color: #ffffff;       
+    margin-bottom: 10px;             
+    padding: 10px;                  
+    border-radius: 5px;             
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+  }
+  
+  
+  a.connect {
+    text-decoration: none;          
+    color: #0077cc;                  
+    font-weight: bold;
+  }
+  
+  
+  a.connect:hover {
+    color: #005fa3;
+  }
+  
