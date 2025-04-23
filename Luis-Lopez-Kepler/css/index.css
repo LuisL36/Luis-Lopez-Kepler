@@ -1,44 +1,80 @@
-
+/* Base styles */
 body {
-    background-color: #dbdbdb;      
-    color: #333333;                  
-    font-family: 'Arial', sans-serif; 
-    padding: 20px;                   
-  }
-  
-  
-  header {
-    text-align: center;              
-    font-size: 2em;                 
-    font-weight: bold;
-    color: #222222;
-  }
-  
-  
-  section {
-    padding: 15px;                  
-    margin: 20px 0;                  
-    border: 2px solid #000000;       
-  }
-  
-  .experience li {
-    list-style: none;               
-    background-color: #ffffff;       
-    margin-bottom: 10px;             
-    padding: 10px;                  
-    border-radius: 5px;             
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
-  }
-  
-  
-  a.connect {
-    text-decoration: none;          
-    color: #0077cc;                  
-    font-weight: bold;
-  }
-  
-  
-  a.connect:hover {
-    color: #005fa3;
-  }
-  
+  background-color: #dbdbdb;
+  color: #333333;
+  font-family: 'Arial', sans-serif;
+  padding: 80px 20px 20px; /* extra top padding for sticky nav */
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #222222;
+}
+
+/* Section layout */
+section {
+  padding: 15px;
+  margin: 20px 0;
+  border: 2px solid #000000;
+}
+
+/* Sticky Navigation Bar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 90%;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Experience section using Flexbox */
+#Experience ul {
+  padding: 0;
+}
+
+#Experience li {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Connect section using Flexbox */
+#Connect ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+#Connect li {
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Link styling */
+a.connect {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+}
+
+a.connect:hover {
+  color: #005fa3;
+}
