@@ -6,6 +6,22 @@ body {
   padding: 80px 20px 20px; /* extra top padding for sticky nav */
 }
 
+/* Heading styles */
+h1 {
+  font-size: 2.5rem;
+  color: #111111;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #222222;
+  border-bottom: 2px solid #333333;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
 /* Header styles */
 header {
   text-align: center;
@@ -25,7 +41,7 @@ section {
 nav {
   position: fixed;
   top: 0;
-  width: 90%;
+  width: 100%; 
   background-color: #ffffff;
   padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
