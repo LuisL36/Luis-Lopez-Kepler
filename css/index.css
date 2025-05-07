@@ -88,6 +88,24 @@ nav a:hover {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+#Skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+#Skills li {
+  background-color: #ffffff;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  font-weight: bold;
+}
+
 /* Connect section using Flexbox */
 #Connect ul {
   display: flex;
@@ -145,7 +163,7 @@ a.connect:hover {
 @media (max-width: 767px) {
   h1 {
     font-size: 1.8rem;
-    color: #555555;
+    color: #e77e7e;
   }
 
   header {
