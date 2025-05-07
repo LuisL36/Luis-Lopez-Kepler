@@ -1,0 +1,173 @@
+/* === Base Styles (Desktop Default) === */
+body {
+  background-color: #dbdbdb;
+  color: #333333;
+  font-family: 'Arial', sans-serif;
+  padding: 80px 20px 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #111111;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #222222;
+  border-bottom: 2px solid #333333;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+header {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #222222;
+}
+
+section {
+  padding: 15px;
+  margin: 20px 0;
+  border: 2px solid #000000;
+}
+
+/* === Sticky Navigation Bar === */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Nav link styles */
+nav a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #005fa3;
+}
+
+/* === Main Grid Layout for Sections === */
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Experience section using Grid Layout */
+#Experience ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+#Experience li {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Connect section using Flexbox */
+#Connect ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+#Connect li {
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+a.connect {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+}
+
+a.connect:hover {
+  color: #005fa3;
+}
+
+/* === Tablet Styles (768px–1023px) === */
+@media (max-width: 1023px) and (min-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+    color: #333333;
+  }
+
+  nav {
+    padding: 8px 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #Connect li {
+    font-size: 0.95rem;
+    background-color: #f4f4f4;
+  }
+
+  #Experience ul {
+    grid-template-columns: 1fr;
+  }
+
+  .main-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* === Mobile Styles (Up to 767px) === */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 1.8rem;
+    color: #555555;
+  }
+
+  header {
+    font-size: 1.5em;
+    color: #444444;
+  }
+
+  #Experience ul {
+    grid-template-columns: 1fr;
+  }
+
+  #Connect ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #Connect li {
+    padding: 8px;
+    background-color: #eeeeee;
+  }
+
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+}
