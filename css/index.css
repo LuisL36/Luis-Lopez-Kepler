@@ -67,7 +67,7 @@ nav a:hover {
 /* === Main Grid Layout for Sections === */
 .main-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr;
   gap: 20px;
   padding: 20px;
 }
@@ -75,7 +75,7 @@ nav a:hover {
 /* Experience section using Grid Layout */
 #Experience ul {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 15px;
   padding: 0;
   list-style: none;
@@ -86,6 +86,24 @@ nav a:hover {
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#Skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+#Skills li {
+  background-color: #ffffff;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  font-weight: bold;
 }
 
 /* Connect section using Flexbox */
@@ -137,7 +155,7 @@ a.connect:hover {
   }
 
   .main-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 
@@ -145,7 +163,7 @@ a.connect:hover {
 @media (max-width: 767px) {
   h1 {
     font-size: 1.8rem;
-    color: #555555;
+    color: #444444;
   }
 
   header {
