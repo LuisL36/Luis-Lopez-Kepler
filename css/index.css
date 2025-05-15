@@ -67,7 +67,7 @@ nav a:hover {
 /* === Main Grid Layout for Sections === */
 .main-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr;
   gap: 20px;
   padding: 20px;
 }
@@ -75,7 +75,7 @@ nav a:hover {
 /* Experience section using Grid Layout */
 #Experience ul {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 15px;
   padding: 0;
   list-style: none;
@@ -155,7 +155,7 @@ a.connect:hover {
   }
 
   .main-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 
@@ -163,7 +163,7 @@ a.connect:hover {
 @media (max-width: 767px) {
   h1 {
     font-size: 1.8rem;
-    color: #e77e7e;
+    color: #444444;
   }
 
   header {
