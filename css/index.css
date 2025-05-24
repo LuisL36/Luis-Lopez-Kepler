@@ -189,3 +189,103 @@ a.connect:hover {
     grid-template-columns: 1fr;
   }
 }
+/* === Leave a Message Form Styles === */
+#leave-message {
+  margin: 2rem auto;
+  max-width: 600px;
+  padding: 1rem;
+  border: 2px solid #000;
+  border-radius: 8px;
+  background: #fff;
+}
+#leave-message h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+#leave-message label {
+  display: block;
+  margin: 0.5rem 0 0.25rem;
+}
+#leave-message input,
+#leave-message textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#leave-message button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  background: #0077cc;
+  color: #fff;
+}
+#leave-message button:hover {
+  background: #005fa3;
+}
+
+/* === Messages List Styles === */
+#messages {
+  display: none; /* will be toggled via JS */
+  margin: 2rem auto;
+  max-width: 600px;
+  padding: 1rem;
+  border: 2px solid #000;
+  border-radius: 8px;
+  background: #fff;
+}
+#messages h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+#messages ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#messages li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+#messages li:last-child {
+  border-bottom: none;
+}
+#messages li a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #0077cc;
+}
+#messages li a:hover {
+  color: #005fa3;
+}
+#messages li span {
+  flex: 1;
+  margin-left: 0.5rem;
+}
+#messages button {
+  background: none;
+  border: 1px solid #d00;
+  color: #d00;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#messages button:hover {
+  background: #fee;
+}
+
+/* === Responsive tweaks for the new sections === */
+@media (max-width: 767px) {
+  #leave-message input,
+  #leave-message textarea,
+  #leave-message button,
+  #messages button {
+    font-size: 1rem;
+  }
+}
