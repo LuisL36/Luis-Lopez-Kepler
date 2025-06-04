@@ -106,6 +106,35 @@ nav a:hover {
   font-weight: bold;
 }
 
+/* === Projects Section === */
+#Projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+.repo-bubble {
+  display: inline-block;
+  background-color: #eef6ff;
+  color: #0366d6;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+  text-decoration: none;
+}
+
+.repo-bubble:hover {
+  transform: scale(1.05);
+  background-color: #ddeeff;
+}
+
 /* Connect section using Flexbox */
 #Connect ul {
   display: flex;

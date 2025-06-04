@@ -1,3 +1,4 @@
+console.log('index.js loaded');
 const today = new Date();
 const thisYear = today.getFullYear();
 
@@ -17,6 +18,45 @@ for (let i = 0; i < skills.length; i++) {
     const skill = document.createElement('li');
     skill.innerText = skills[i];
     skillsList.appendChild(skill);
+}
+
+const githubUsername = 'LuisL36'
+const repoUrl        = `https://api.github.com/users/LuisL36/repos`
+fetch(repoUrl)
+    .then(res => {
+        if(!res.ok) throw new Error(`GitHub API returned ${res.status}`);
+        return res.json();
+    })
+    .then(repositories => {
+        displayRepos(repositories);
+    })
+    .catch(err => {
+        console.error(err);
+        document.getElementById('Projects')
+            .innerHTML += '<p class="error">Could not load projects at this time.</p>';
+    });
+
+function displayRepos(repos) {
+  const projectList = document
+    .getElementById('Projects')
+    .querySelector('ul');
+
+  projectList.innerHTML = ''; 
+
+  repos.forEach(repo => {
+    const li = document.createElement('li');
+    li.classList.add('repo-bubble');
+
+    const anchor = document.createElement('a');
+    anchor.href = repo.html_url;
+    anchor.target = '_blank';
+    anchor.rel = 'noopener';
+    anchor.textContent = repo.name;
+
+    
+    li.appendChild(anchor);
+    projectList.appendChild(li);
+  });
 }
 
 const messageForm = document.forms.leave_message;
